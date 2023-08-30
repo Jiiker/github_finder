@@ -1,0 +1,47 @@
+.header {
+  font-family: Arial;
+  height: 70px;
+  background-color: black;
+  color: white;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  left: 25px;
+}
+
+.logo {
+  width: 45px;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  right: 80px;
+}
+
+.home {
+  margin-right: 40px;
+}
