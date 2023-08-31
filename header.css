@@ -26,12 +26,16 @@
 
 .logo {
   width: 45px;
+
+  cursor: pointer;
 }
 
 .title {
   font-size: 40px;
   font-weight: bold;
   padding-left: 10px;
+
+  cursor: pointer;
 }
 
 .right-section {
@@ -44,4 +48,17 @@
 
 .home {
   margin-right: 40px;
+  cursor: pointer;
+}
+
+.home:hover {
+  opacity: 0.7;
+}
+
+.about {
+  cursor: pointer;
+}
+
+.about:hover {
+  opacity: 0.7;
 }

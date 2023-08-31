@@ -25,6 +25,14 @@
   margin-right: 25px;
 }
 
+.profile-html-url {
+  cursor: pointer;
+}
+
+.profile-html-url:hover {
+  opacity: 0.7;
+}
+
 .profile-avatar-url {
   width: 230px;
 

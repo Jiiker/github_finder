@@ -49,7 +49,7 @@ function getRepository(object) {
     repository.appendChild(repoBox);
 
     repoBox.innerHTML = `
-      <text class="repo-name">${object[idx].name}</text>
+      <text class="repo-name" onclick="location.href='${object[idx].html_url}'">${object[idx].name}</text>
       <box class="repo-reput-box" id="stargazers-count">Stars: ${object[idx].stargazers_count}</box>
       <box class="repo-reput-box" id="watchers-count">Watchers: ${object[idx].watchers_count}</box>
       <box class="repo-reput-box" id="forks_count">Forks: ${object[idx].forks_count}</box>
