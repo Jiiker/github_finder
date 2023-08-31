@@ -1,0 +1,39 @@
+.search-box {
+  width : 1500px;
+  font-family: Arial;
+  margin: 0 auto;
+  border-width: 2px;
+  border-color: rgb(158, 158, 158, 0.7);
+  border-style: solid;
+  border-radius: 5px;
+
+  padding : 10px;
+  padding-bottom : 20px;
+
+  display: grid;
+  row-gap: 20px;
+
+  position: relative;
+  top: 80px;
+}
+
+.search-box-title {
+  font-size: 45px;
+  font-weight: bold;
+  color: black;
+}
+
+.search-box-detail {
+  font-size: 25px;
+  font-weight: bold;
+  color : rgb(150, 150, 150, 0.7)
+}
+
+.search-bar {
+  height : 20px;
+  width : 600px;
+}
+
+.search-btn {
+  height: 26px;
+}
