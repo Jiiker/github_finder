@@ -32,6 +32,31 @@ function getProfile(object) {
   `
 }
 
+function getRepository(object) {
+  const repository = document.createElement("section");
+  const repoTitle = document.createElement("div");
+  
+  repository.className = "repository";
+  repoTitle.className = "repo-title";
+  repoTitle.innerText = "Latest Repos";
+  
+  profile.appendChild(repository);
+  repository.appendChild(repoTitle);
+
+  for (let idx = 0; idx < object.length; idx++) {
+    const repoBox = document.createElement("div");
+    repoBox.className = "repo-box";
+    repository.appendChild(repoBox);
+
+    repoBox.innerHTML = `
+      <text class="repo-name">${object[idx].name}</text>
+      <box class="repo-reput-box" id="stargazers-count">Stars: ${object[idx].stargazers_count}</box>
+      <box class="repo-reput-box" id="watchers-count">Watchers: ${object[idx].watchers_count}</box>
+      <box class="repo-reput-box" id="forks_count">Forks: ${object[idx].forks_count}</box>
+    `
+  }
+}
+
 searchBarBox.addEventListener ("submit", (event) => {
   event.preventDefault();
   let searchName = searchBar.value;
@@ -46,6 +71,13 @@ searchBarBox.addEventListener ("submit", (event) => {
     else {
       profile.innerHTML = "";
       getProfile(user);
+      if (user.public_repos > 0) {
+        fetch(`https://api.github.com/users/${searchName}/repos`)
+        .then((res) => res.json())
+        .then((repos) => {
+          getRepository(repos);
+        });
+      }
     }
   });
 });
