@@ -1,7 +1,9 @@
 .search-box {
-  width : 1200px;
-  font-family: Arial;
+  width: 70%;
+
   margin: 0 auto;
+
+  font-family: Arial;
   border-width: 2px;
   border-color: rgb(158, 158, 158, 0.7);
   border-style: solid;
@@ -12,9 +14,6 @@
 
   display: grid;
   row-gap: 20px;
-
-  position: relative;
-  top: 80px;
 }
 
 .search-box-title {
@@ -31,7 +30,7 @@
 
 .search-bar {
   height : 20px;
-  width : 600px;
+  width : 40%;
 }
 
 .search-btn {

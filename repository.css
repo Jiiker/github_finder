@@ -1,12 +1,9 @@
+.latest-repos {
+  width: 100%;
+}
+
 .repository {
-  width: 1200px;
-
-  margin: 0 auto;
-
   display: grid;
-
-  position: relative;
-  top: 150px;
 }
 
 .repo-title {

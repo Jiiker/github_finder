@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="content.css">
   <link rel="stylesheet" href="profile.css">
   <link rel="stylesheet" href="repository.css">
+  <link rel="stylesheet" href="body.css">
 </head>
 <body>
   <header class="header">
@@ -20,19 +21,27 @@
       <text class="about">About</text>
     </div>
   </header>
-  <content class="search-box">
-    <div class="search-box-title">Search GitHub Users</div>
-    <div class="search-box-detail">Enter a username to fetch a user profile and repos</div>
-    <form class="search-bar-box">
-      <input class="search-bar" type="text" placeholder="Enter a username" required>
-      <input class="search-btn" type="submit" value="Search">
-    </form>
-  </content>
-  <profile class="profile">
-    <!-- profile 불러올 공간 -->
-  </profile>
-  <div class="latest-repos">
-  </div>
+  <wrap class="wrapper">
+    <content class="search-box">
+      <div class="search-box-title">Search GitHub Users</div>
+      <div class="search-box-detail">Enter a username to fetch a user profile and repos</div>
+      <form class="search-bar-box">
+        <input class="search-bar" type="text" placeholder="Enter a username" required>
+        <input class="search-btn" type="submit" value="Search">
+      </form>
+    </content>
+    <main>
+      <profile class="profile">
+        <!-- profile 불러올 공간 -->
+      </profile>
+      <div class="latest-repos">
+        <!-- repository 불러올 공간 -->
+      </div>
+    </main>
+  </wrap>
+  <footer class="footer">
+    <div class="footer-text">Github Finder ⓒ</div>
+  </footer>
   <script async src="script.js"></script>
 </body>
 </html>

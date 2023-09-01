@@ -1,22 +1,24 @@
+main {
+  width: 70%;
+
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
 .profile {
+  width: 100%;
   display: grid;
 }
 
 .profile-box {
-  width: 1200px;
   padding: 10px;
 
-  margin: 0 auto;
   border-width: 2px;
   border-color: rgb(158, 158, 158, 0.7);
   border-style: solid;
   border-radius: 5px;
 
   display: flex;
-  overflow: hidden;
-
-  position: relative;
-  top: 130px;
 }
 
 .profile-left-section {
