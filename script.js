@@ -57,6 +57,15 @@ function getRepository(object) {
   }
 }
 
+function getLawn(userName){
+  const lawnLocation = document.querySelector(".lawn-location");
+  const lawn = document.createElement("img");
+
+  lawn.className = "lawn";
+  lawn.src = `https://ghchart.rshah.org/${userName}`;
+  lawnLocation.appendChild(lawn);
+}
+
 searchBarBox.addEventListener ("submit", (event) => {
   event.preventDefault();
   let searchName = searchBar.value;
@@ -70,6 +79,7 @@ searchBarBox.addEventListener ("submit", (event) => {
     }
     else {
       profile.innerHTML = "";
+      getLawn(searchName);
       getProfile(user);
       if (user.public_repos > 0) {
         fetch(`https://api.github.com/users/${searchName}/repos`)
